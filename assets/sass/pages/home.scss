@@ -1,0 +1,384 @@
+/* 
+Ana açık mavi : #006cb7
+Ana koyu mavi : #024777
+Ana Boyut: 1400px;
+Navigation:1170px;
+*/
+
+body{
+    font-family: 'Gotham', sans-serif;
+    background-color: #000;
+
+}
+
+/* ---TOPBAR--- */
+#topbar {
+    background: #006cb7;
+    font-family: 'Gotham Light';
+    font-size: 14px;
+    padding: 0;
+    color: #fff;
+    z-index: 67;
+
+    a:hover {
+      color: #024777;
+    }
+
+    .iletisim a {
+        font-style: normal;
+        text-decoration: none;
+        line-height: 0;
+        transition: 0.3s;
+        color:#fff;
+        display: inline-block;
+        margin:5px;
+
+        &:hover{
+            color: #024777;
+        }
+
+    }
+
+    i{
+        color:#fff;
+        font-size: 18px;
+        margin:10px;
+    }
+
+    .giris a {
+        color: #fff;
+        padding: 15px 15px;
+        display: inline-block;
+        transition: 0.3s;
+        text-decoration: none;
+
+        &:hover {
+            background: #024777;
+        }
+
+    }
+
+}
+/* ---!TOPBAR---*/
+
+/* ---HEADER---*/
+.header{
+    position: relative;
+    background-color: #fff;
+    height: 105px;
+    align-items: center;
+    z-index: 99;
+
+    a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        color: #000;
+        font-family: 'Gotham Light';
+    }
+    
+}
+/* ---!HEADER---*/
+
+/* ---BANNER---*/
+
+#banner{
+    color:#fff;
+    z-index: 4;
+    padding-bottom: 180px;
+    h1{
+        font-weight: 900;
+        font-size: 50px;
+        padding-top: 152px;
+        padding-bottom: 20px;
+    }
+    h2{
+        font-weight: 300;
+        font-size: 45px;
+        padding: 20px 0px 20px 0px;
+    }
+    p{
+        font-weight: 200;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+/* ---!BANNER---*/
+
+/* ---JOİN---*/
+#joinus{
+    padding-bottom: 50px;
+    background: url(../assets/images/join.png) center center no-repeat;
+    background-size: 100% 100%;
+    bottom: -100px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: auto;
+    input{
+        border:3px solid #fff;
+    }
+    p{
+      color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #joinus{background-size: 100% 70%;} 
+  }
+
+@media screen and (max-width: 767px) {
+    .join-us-inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }  
+}
+ 
+#buton{
+    background-color:#fff;
+    padding:10px 40px;
+    border-radius: 10px;
+    font-family: 'Gotham Black';
+}
+#emailgiris{
+    background-color: #006cb7;
+    border-style: solid;
+    border:3px;
+    color:#fff;
+    border-radius: 10px;
+
+    &::placeholder{
+      color: #fff;
+    }  
+}
+/* ---!JOİN---*/
+
+/* ---WHY-US---*/
+
+.why-us{
+    position:relative;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
+    padding-top: 100px;
+
+    &-inner{
+      padding-bottom: 95px;
+    }
+
+    h1{
+        top:0;
+        color: #6f6f6f;
+        font-family: 'Gotham Black';
+        font-weight: 800;
+        font-size: 40px;
+    }
+    .baslik{
+        margin-bottom: 20px;
+    }
+    .yazi{
+        color: #6f6f6f;
+        font-family: 'Gotham Light';
+        font-size: 25px;
+        padding:0px 115px 0px 115px;
+    }
+    i{
+        display:inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #006cb7;
+        border-radius: 50px;
+        color: #fff;
+        text-align: center;
+        padding:25px;
+        margin:20px;
+    }
+}
+
+.why{
+    border-right:3px solid #bdbdbd;
+
+    &:last-child {
+    border: none;
+  }
+  p{
+      color: #000;
+      font-family: 'Gotham Light';
+      font-size: 15px;
+  }
+}
+
+.servis1{
+    position:relative;
+    display: block;
+    background-color: #f1f1f1;
+    color: #fff;
+    text-align: left;
+    padding: 45px;
+
+    ul{
+        list-style: none;
+        padding: 5px;
+        overflow: hidden;
+        li{
+            background: url("../assets/images/check.png");
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-left: 67px;
+            margin-top: 5%;
+            line-height: 1.6;
+            color: #000;
+            font-size: 15px;
+
+            img{
+                margin: 5px;
+            }
+        }
+    }
+
+    h1 {
+        color: #000;
+        font-size: 25px;
+        font-family: 'Gotham';
+        font-weight: 600;
+    }
+    
+}
+.servis2{
+    background-color: #bdbdbd;
+    padding: 0px;
+}
+/* ---WHY-US---*/
+
+/* ---TESTİMONİAL---*/
+.testimonial{
+    min-width: auto;
+    max-height: 100%;
+    color: #fff;
+    background-color: #006cb7;
+    top:0;
+    z-index: 2;
+    padding: 50px;
+
+    .baslik{
+      h3{
+          padding-top: 60px;
+          font-size: 20px;
+      }
+      h1{
+          font-size: 40px;
+          margin-bottom: 80px;
+      }
+
+    } 
+}
+.yorum {
+   blockquote {
+      padding: 0px;
+      border: 0;
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Gotham Xlight';
+
+      p {
+          color: #fff;
+          padding-top: 25px;
+          padding-bottom: 45px;
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+  }
+  &.dark blockquote {
+      background-color: #024777;
+  } 
+}
+.yorum-footer {
+    margin: 10px 0;
+
+    .yorum-author-img img {
+        float: left;
+        max-width: 120px;
+        width: 120px;
+        height: 120px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+        padding: 5px;
+        background-color: #fff;
+        margin-bottom: 38px;
+        
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+    color:#fff;
+    padding-left:149px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 15px;
+        color:#fff;
+        padding-left:149px;
+
+    }
+}
+
+
+
+/* ---!TESTİMONİAL---*/
+
+/* ---!FOOTER---*/
+#footer{
+    background-color: #fff;
+    padding: 90px;
+
+    a:hover {
+        color: #024777;
+    }
+    p{
+    padding-top: 20px;
+    }
+
+    i{
+        padding: 5px;
+    }
+
+    ul{
+        margin-top:20px;
+        padding:0;
+        list-style: none;
+
+        li{
+            display:block;
+            margin:5px;
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.copy{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.copyright{
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 50px;
+    height: 95px;
+    color:#000;
+}
+/* ---!FOOTER---*/
